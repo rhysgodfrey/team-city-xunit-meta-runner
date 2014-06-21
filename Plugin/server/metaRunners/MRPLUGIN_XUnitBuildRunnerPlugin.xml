@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta-runner name="xUnit">
+  <description>Run xUnit tests</description>
+  <settings>
+    <parameters>
+      <!-- Mandatory Fields -->
+      <param name="teamcity.tool.xunit.runner.testDlls" value="" spec="text description='Assembly file (must be the path to the specific test dll)' display='normal' label='Run Tests From' validationMode='not_empty'" />
+    </parameters>
+    <build-runners>
+      <runner name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="&quot;%teamcity.agent.tools.dir%\xunit-build-runner\bin\xunit.console.exe&quot; &quot;%teamcity.tool.xunit.runner.testDlls%&quot; -teamcity" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <requirements />
+  </settings>
+</meta-runner>

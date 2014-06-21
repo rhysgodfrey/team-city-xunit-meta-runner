@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+  
+  <ItemGroup>
+    <AgentFiles Include="Plugin\agent\**\*.*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageFiles Include="Plugin\agent\xunit-build-runner.zip" />
+	<PackageFiles Include="Plugin\server\**\*.*" />
+	<PackageFiles Include="Plugin\teamcity-plugin.xml" />
+  </ItemGroup>  
+  
+  <Target Name="PackageAgentFiles">
+    <Zip Files="@(AgentFiles)" WorkingDirectory="Plugin\agent"
+         ZipFileName="Plugin\agent\xunit-build-runner.zip" />
+  </Target>
+ 
+  <Target Name="Build" DependsOnTargets="PackageAgentFiles">
+    <Zip Files="@(PackageFiles)" WorkingDirectory="Plugin"
+         ZipFileName="xunit-build-runner.zip" />
+  </Target>
+</Project>

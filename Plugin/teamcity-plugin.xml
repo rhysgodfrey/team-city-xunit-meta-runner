@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="urn:shemas-jetbrains-com:teamcity-plugin-v1-xml">
+  <info>
+    <name>XUnitBuildRunnerPlugin</name>
+    <display-name>xUnit Build Runner</display-name>
+    <version>snapshot</version>
+    <description>Adds a xUnit Build Step option to Team City</description>
+    <vendor>
+      <name>Rhys Godfrey</name>
+      <url>https://github.com/rhysgodfrey/team-city-xunit-meta-runner</url>
+    </vendor>
+  </info>
+  <deployment use-separate-classloader="false"/>
+</teamcity-plugin>
