@@ -12,7 +12,7 @@ The plugin has been tested on Team City 8.0.3, but should work with any version 
 ### Installation
 
 1. Download 'xunit-build-runner.zip' from the [latest release](https://github.com/rhysgodfrey/team-city-xunit-meta-runner/releases/latest)
-2. Copy this file into the _<Team City Data Directory>\plugins_ directory on the Team City Server, by default this is _C:\ProgramData\JetBrains\TeamCity\plugins_
+2. Copy this file into the _[Team City Data Directory]\plugins_ directory on the Team City Server, by default this is _C:\ProgramData\JetBrains\TeamCity\plugins_
 3. Restart the Team City server
 
 The xUnit build step type should now be available.
