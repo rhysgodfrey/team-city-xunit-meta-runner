@@ -1,6 +1,8 @@
 Team City xUnit Meta Runner
 ===========================
 
+[![Build status](https://ci.appveyor.com/api/projects/status/3tvv3y7tijdokq44)](https://ci.appveyor.com/project/rhysgodfrey/team-city-xunit-meta-runner)
+
 Easily run [xUnit](https://github.com/xunit/xunit) tests using [Team City](http://www.jetbrains.com/teamcity/).
 
 This Team City plugin adds an extra option when creating a Build Step in Team City 'xUnit'. This is currently quite simple and only allows the selection of one DLL containing xUnit tests to be run. Wildcards and multiple assemblies are not supported (as this is not supported by the xUnit console runner).
