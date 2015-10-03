@@ -1,7 +1,10 @@
 Team City xUnit Meta Runner
 ===========================
 
+[![Project Status: Unsupported - The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.](http://www.repostatus.org/badges/0.1.0/unsupported.svg)](http://www.repostatus.org/#unsupported)
 [![Build status](https://ci.appveyor.com/api/projects/status/3tvv3y7tijdokq44)](https://ci.appveyor.com/project/rhysgodfrey/team-city-xunit-meta-runner)
+
+> __NOTE__ - This project is now unsupported. The current build is still available for use, and feel free to fork this code base. There is an alternative plugin that is part of the [Team City Meta Runner Power Pack](https://github.com/JetBrains/meta-runner-power-pack/tree/master/xunit.net), and [Scott Mackay has an example in this blog post](http://www.wwwlicious.com/2015/09/25/teamcity-dotcover-xunit-at-last/). With xUnit becoming more central in .NET core I'd expect better support to come into a future version of TeamCity. 
 
 Easily run [xUnit](https://github.com/xunit/xunit) tests using [Team City](http://www.jetbrains.com/teamcity/).
 
